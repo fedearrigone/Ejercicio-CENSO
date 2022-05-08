@@ -24,21 +24,20 @@ while integrantes_familia != 0 :
 # calculamos la cantidad de habitantes censados:
 cant_habitantes = cant_habitantes + integrantes_familia
 hogar = hogar + 1
-    
-acu_menores = acu_menores + menores
-   
-#persona mas vieja y mas joven
+# acumulador de menores  
+acu_menores = acu_menores + menores   
+# persona mas vieja y mas joven
 if edad_mayor > max_edad:
     max_edad = edad_mayor
 if edad_joven > min_edad:
     min_edad = edad_joven
-        
+# promedio cantidad de habitantes       
 promedio = (cant_habitantes / hogar)
-       
+# porcentaje de menores       
 porcentaje_menores = (acu_menores * cant_habitantes / 100)
-        
+# promedio salarial       
 promedio_salario = (acum_total / hogar )
-       
+# porcentaje de vehiculos      
 porcentaje_vehiculos = (cant_vehiculo * hogar /100)
 
 print("Cantidad de habitantes censados: {}".format(cant_habitantes))
@@ -48,9 +47,4 @@ print("porcentaje de familia que poseen vehiculo ",porcentaje_vehiculos)
 print("La persona mas vieja tiene: {} años y la mas joven {} años.".format(max_edad, min_edad))
 print("El promedio del ingreso salarial de todos los hogares censados es de: {} ".format(promedio_salario))
 print("Vehiculos censados: {}".format(cant_vehiculo))
-
-
-
-
-
 
